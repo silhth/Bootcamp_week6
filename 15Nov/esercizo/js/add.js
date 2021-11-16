@@ -20,6 +20,7 @@ const Add = () => {
 
       <button>Salva task</button>
     </form>
+    <a href="#" id ="back" ><img src="https://img.icons8.com/ios-glyphs/50/000000/home-page--v1.png" alt="home" width= "35px"/></a>
   </div>`
   );
 
@@ -44,7 +45,8 @@ const Add = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(todo),
-    });
+    }).then((response) => response.json())
+      .then((data) => (location.hash = ""));
   });
 };
 

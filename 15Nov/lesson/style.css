@@ -66,6 +66,21 @@ body {
   #create .row {
     margin: 10px 0;
   }
+
+  .delete {
+    border: 0;
+    color: white;
+    background: rgb(114, 12, 12);
+    border-radius: 50%;
+    transition: all 0.4s;
+
+  }
+
+  .delete:hover {
+    cursor: pointer;
+    transform: rotate(360deg) scale(2);
+    background: red;
+  }
   
   .loading {
     color: #aaa;

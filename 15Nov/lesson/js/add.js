@@ -2,6 +2,7 @@ import { render, API } from "./utils.js";
 
 const Add = () => {
   const container = document.querySelector("#container");
+  const today = new Date()
 
   render(
     container,
@@ -20,7 +21,7 @@ const Add = () => {
 
       <div class="row">
         <label for="year">Anno:</label>
-        <input type="number" min="1900" value="2021" id="year" name="year" />
+        <input type="number" min="1900" value="${today.getFullYear()}" id="year" name="year" />
       </div>
 
       <div class="row">
@@ -30,6 +31,7 @@ const Add = () => {
 
       <button>Salva scheda</button>
     </form>
+    <a href="#" id ="back" >Torno alla home</a>
   </div>`
   );
 
@@ -54,7 +56,9 @@ const Add = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(movie),
-    });
+    })
+      .then((response) => response.json())
+      .then((data) => (location.hash = ""));
   });
 };
 

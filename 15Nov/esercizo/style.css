@@ -47,20 +47,67 @@ body {
   }
   
   footer {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background: black;
+    width: auto;
+    height: 150px;
+    margin-top: 50px;
+
+    color:white;
     text-align: center;
+    align-items: center;
+  
   }
 
+  footer p{
+
+    margin: 75px auto;
+
+  }
+  
+  .deadline {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+ 
+  .delete {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: rgb(78, 4, 4);
+    border-radius: 50%;
+    transition: all 0.4s;
+
+  }
+
+
+  .delete:hover {
+    cursor: pointer;
+    transform: rotate(360deg) scale(2);
+    background: rgb(136, 1, 1);
+  }
+
+  #container {
+    margin: 0px auto;
+  }
  
   #add,
   #create button {
     display: block;
-    padding: 10px;
     width: 200px;
-    border-radius: 10px;
-    margin: 5px auto;
-    background-color: #fff;
+    padding: 10px;
     border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 10px auto;
+    
+    text-decoration: none;
+    
+    background-color: #fff;
+    color: black;
+
     font-size: 16px;
     transition: all 0.4s ease;
   }
@@ -74,9 +121,11 @@ body {
    
   }
 
-  #container {
-    margin: 0px auto;
+  #back img {
+    display: block;
+    margin: 0 auto;
   }
+
 
   #create {
     display: flex;
@@ -125,9 +174,9 @@ body {
   }
   
   .loading {
-    color: #aaa;
+    color: rgb(133, 131, 131);
     padding: 15px;
-    border: 1px dashed #aaa;
+    border: 1px dashed rgb(133, 131, 131);
   
     animation-name: pulse;
     animation-duration: 1s;
