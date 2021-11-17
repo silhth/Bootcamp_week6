@@ -20,7 +20,7 @@ const Add = () => {
 
       <button>Salva task</button>
     </form>
-    <a href="#" id ="back" ><img src="https://img.icons8.com/ios-glyphs/50/000000/home-page--v1.png" alt="home" width= "35px"/></a>
+    <a href="#" id ="back" ><img id ="home" src="https://img.icons8.com/ios-glyphs/50/000000/home-page--v1.png" alt="home"/></a>
   </div>`
   );
 
