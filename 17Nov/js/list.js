@@ -4,7 +4,7 @@ const List = (data) => {
   const elements = data
     .map(
       (item) => `<li>
-        <img src="${item.poster}" alt="movie poster"/>
+        <img class= "poster" src="${item.poster}" alt="movie poster"/>
         <a href="#view-${item.id}">${item.title}</a> <p>${item.year}</p>
         <div><a class="edit" href="#edit-${item.id}"><img src="https://img.icons8.com/ios-glyphs/50/000000/edit.png" alt= "edit"/></a>
         <button class="delete" id="${item.id}"><img src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/50/000000/external-bin-mobile-user-interface-tulpahn-detailed-outline-tulpahn.png" alt="delete"/></button></div>

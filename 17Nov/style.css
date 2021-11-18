@@ -63,6 +63,7 @@ footer {
   transition: all 0.4s ease;
 }
 
+
 #add:hover,
 #save:hover,
 #edit:hover {
@@ -231,6 +232,36 @@ ul li div{
   transform: scale(1.5);
 }
 
+
+.movie{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+
+
+
+  margin: 0 auto;
+  padding: 10px;
+  background: white;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.movie-description {
+
+  width: 100%;
+  max-width: 400px;
+  margin: 0 25px;
+}
+
+article img{
+  width: 150px;
+}
+
 /* Box di avviso errori */
 .alert {
   background-color: #b22222;
@@ -255,7 +286,7 @@ ul li div{
 
 /* Placeholder per caricamento */
 .loading {
-  color: #aaa;
+  color: rgba(0, 0, 0, 0.8);;
   padding: 15px;
   border: 1px dashed #aaa;
 
@@ -264,6 +295,8 @@ ul li div{
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+
 
 /* Animazione */
 @keyframes pulse {
