@@ -1,0 +1,86 @@
+
+.btns{
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    } 
+
+button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    
+}
+.up {
+    margin: 0px auto;
+}
+
+.right, 
+.left {
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.down {
+    margin: 0px auto;
+}
+.background{
+    
+    background: url(./img/field.png);
+
+    margin: 0px auto;
+    position: relative;
+
+    transition: all 1s ease;
+
+}
+
+
+.subject {
+    width: 55px;
+    height: 80px;
+
+    background: url(./img/hero.png);
+    background-position: 0px 0px;
+
+    position: absolute;
+    transition: top 1s ease, left 1s ease;   
+}
+
+.subjectWlak{
+    background-position: 55px 0px; 
+
+}
+
+.subjectTurn{
+    background-position: 0px 260px;
+
+}
+
+.subjectWlakDown{
+    background-position: 55px 260px;
+
+}
+
+.subjectTurnL{
+    background-position: 0px 180px;
+
+}
+
+.subjectWlakLeft{
+    background-position: 55px 180px;
+
+}
+
+.subjectTurnR{
+    background-position: 55px 80px;
+
+}
+
+.subjectWlakRight{
+    background-position: 0px 80px;
+
+}
+
+
